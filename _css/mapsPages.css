@@ -1,0 +1,126 @@
+/*MAPS*/
+#gauge {
+	height: 100px;
+	max-width: 140px;
+	position: absolute;
+	top: 40px;
+	right: 10px;
+	width: auto;
+}
+.gauges {
+    padding: 20px 0;
+	width: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+}
+.gauge {
+    height: 92px;
+	width: 120px;
+    margin: 14px 0;
+}
+text tspan {
+    margin-top: 10px;
+}
+#individualMapDiv {
+	width: 100%;
+/*	min-height: calc(100% - 120px);*/
+    flex: 1;
+    max-height: 800px;
+    margin-top: 30px;
+}
+#individualMapDiv iframe, #allMapDiv iframe {
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+.pageOverlayImg {
+	z-index: 11;
+	width: 80vw;
+	height: auto;
+	max-width: 1400px;
+	max-height: 90vh;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 10;
+	border: 10px solid #FFF;
+	border-bottom: 40px solid #FFF;
+}
+.googLabels {
+	background: white;
+}
+#infoWindows {
+	margin-bottom: 1px;
+	padding: 5px;
+	position: relative;
+}
+#infoWindows h2, #infoWindows h3, #infoWindows h2 {
+	margin-bottom: 3px;
+	width: 100%;
+	margin-top: 0px;
+}
+#infoWindows h2 {
+    font-size: 18px;
+}
+#infoWindows h3 {
+    font-size: 15px;
+}
+#infoWindows h4 {
+    
+}
+#infoWindows p {
+	margin-bottom: 5px;
+	max-height: 40px;
+	overflow: hidden;
+}
+#infoWindows a {
+	color: blue;
+	font-weight: 600;
+}
+#infoWindows #gauge {
+	height: 70px;
+	max-width: 90px;
+	position: absolute;
+	right: 0px;
+	top: 5px;
+}
+.gm-style-pbc{
+    display: none !important
+}
+.fullList .customMapDiv {
+	min-width: 40%;
+	height: 100%;
+    position: fixed;
+    top: 60px;
+    right: 0;
+    margin-right: 20px;
+}
+.fullList #allMapDiv {
+	width: 100%;
+    height: 90%;
+    padding-bottom: 60px;
+}
+#individualMapDiv iframe, #allMapDiv iframe {
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+/* ----------------------------  MEDIA QUERY ------------------------------ */
+@media screen and (max-width:430px) {
+	#individualMapDiv, #allMapDiv {
+		height: calc(100vh - 128px);
+	}
+}
+/* ----------------------------  MEDIA QUERY ------------------------------ */
+@media screen and (max-width:400px) {
+	.individualText #gauge, .individualText .gauge{
+		height: 70px;
+		max-width: 80px;
+		top: 5px;
+		right: 0;
+	}
+}

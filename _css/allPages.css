@@ -1,0 +1,513 @@
+body {
+	margin: 0;
+	padding: 0 0 0px 0;
+	font-family: Josefin Sans, arial, sans-serif;
+	overflow: scroll;
+    overflow-x: hidden;
+}
+body a {
+	margin: 0;
+	padding: 0;
+	font-family: Raleway, arial, sans-serif;
+	text-decoration: none;
+	display: block;
+}
+body, body * {
+	box-sizing: border-box;
+	position: relative;
+}
+#body {
+	width: 100vw;
+    min-height: 100vh;
+ 	margin: 0;
+  	display: flex;
+ 	flex-direction: column;
+  	flex-wrap: nowrap;
+	overflow: hidden;
+}
+h1 {
+	margin: 5px 0 0 0;
+	color: #64706c;
+	font: 500 28px/26px Josefin Sans, arial, sans-serif;
+	text-transform: uppercase;
+	align-self: center;
+	text-align: center;
+	letter-spacing: 4px;
+	position: relative;
+    padding: 0;
+  	display: flex;
+ 	flex-direction: column;
+  	flex-wrap: wrap;
+  	align-content: center;
+  	justify-content: center;
+}
+h1 span {
+	margin: 0;
+	font: 200 34px/28px Josefin Sans, arial, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0;
+	margin-left: -4px;
+}
+
+h2 {
+	font: 300 22px/20px Raleway, arial, sans-serif;
+	margin: 40px 0 0;
+	padding: 0;
+    color: #233237;
+    text-align: left;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin: 30px 10px 0 0;
+}
+h3 {
+	font: 400 17px/16px Raleway, arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+h4 {
+	font: 300 15px/16px Raleway, arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+h5 {
+	font: 600 15px/16px Raleway, arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+h4 span {
+	font-weight: 400;
+}
+p {
+	font: 300 14px/18px Raleway, arial, sans-serif;
+	margin: 0;
+	padding: 0;
+    color: #233237;
+}
+ul {
+    
+}
+/*HEADER*/
+header {
+	width: 100%;
+	height: 74px;
+ 	margin: 0 0 0 0;
+  	padding: 0;
+  	display: flex;
+ 	flex-direction: row;
+  	flex-wrap: nowrap;
+  	align-content: center;
+  	justify-content: flex-start;
+	z-index: 3;
+}
+.headerLogo2 {
+	display: none;
+}
+#headerLinks {
+	width: auto;
+    z-index: 3;
+ 	margin: 0 0 0 auto;
+  	padding: 0 20px 0 0;
+  	display: flex;
+ 	flex-direction: row;
+  	flex-wrap: nowrap;
+  	align-content: center;
+  	justify-content: center;
+}
+#headerLinks a {
+	align-self: center;
+	color: #233237;
+	width: auto;
+	padding: 10px 30px;
+	text-align: center;
+	transition: font-size .5s;
+	text-transform: uppercase;
+	font-size: 14px;
+    font-weight: 600;
+	height: 60%;
+  	display: flex;
+ 	flex-direction: column;
+  	flex-wrap: wrap;
+  	align-content: center;
+  	justify-content: center;
+}
+.headerLogoDiv {
+    width: 300px;
+    height: 100%;
+}
+.headerText {
+    width: 300px;
+    height: 100%;
+	margin: 0 10px;
+  	padding: 0 0 0 0;
+  	display: flex;
+ 	flex-direction: row;
+  	flex-wrap: nowrap;
+  	align-content: center;
+  	justify-content: center;
+}
+#menuIcon {
+	display: none;
+}
+#body .showMenu {
+	left: 0;
+}
+.headerMain {
+	height: 100%;
+	display: flex;
+ 	flex-direction: row;
+  	flex-wrap: wrap;
+  	align-content: center;
+  	justify-content: center;
+	margin-left: -3px;
+	margin-right: -9px;
+}
+#siteHeader img{
+	margin-top: -4px;
+	align-self: center;
+	width: 40px;
+}
+.Logo {
+    width: 60px;
+    height: 40px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    
+}
+.Logo .logoBackLine {
+    background-color: #64706c;
+    height: 2px;
+    width: 100%;
+    border-radius: 15px;
+}
+.Logo .mountain1 {
+    width: 20px;
+	height: 20px;
+	border-right: 2px solid #64706c;
+	border-bottom: 2px solid #64706c;
+    background: #FFF;
+    position: absolute;
+    top: 14px;
+    left: 4px;
+    transform: rotate(221deg) skewY(15deg) skewX(10deg);
+}
+.Logo .mountain2 {
+    width: 32px;
+	height: 32px;
+	border-right: 2px solid #64706c;
+	border-bottom: 2px solid #64706c;
+    background: #FFF;
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    transform: rotate(230deg) skewX(20deg) skewY(8deg);
+}
+.Logo .mountain3 {
+    width: 20px;
+	height: 20px;
+	border-right: 2px solid #64706c;
+	border-bottom: 2px solid #64706c;
+    background: #FFF;
+    position: absolute;
+    top: 14px;
+    right: 4px;
+    transform: rotate(221deg) skewY(15deg) skewX(10deg);
+}
+.headerMain span {
+	text-align: center;
+}
+.headerLogo {
+	width: 35px;
+	height: 35px;
+	align-self: center;
+	background: #528015;
+	margin-right: 20px;
+	display: none;
+}
+/*Fallback Nav Color*/
+header, .slideMenu {
+	background-color: #FFF;
+}
+/*Hot Springs - Index*/
+header, .slideMenu {
+	background-color: #FFF;
+}
+/*Main - Index*/
+.mainIndex header, .mainIndex .slideMenu {
+	background-color: #FFF;
+}
+#secondNav {
+    height: 70px;
+    width: 100%;
+    background: #64706c;
+    color: #FFF;
+}
+#secondNav .secondNavInner {
+    height: 100%;
+    max-width: 1600px;
+    padding: 0 27px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+}
+#secondNav h4 {
+    height: auto;
+    align-self: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+#secondNav #navCategory {
+    padding: 0 20px;
+    position: relative;
+}
+#secondNav #navCategory h5 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #BED8FF;
+    text-transform: uppercase;
+    align-self: center;
+}
+
+#secondNav .secondNavDropDown {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+#secondNav .navDropdown {
+    position: absolute;
+    top: 70px;
+    background-color: #A8BCB6;
+    padding: 10px 20px 15px;
+    z-index: 3;
+    display: none;
+}
+#secondNav .navDropdown:hover {
+    display: flex;
+}
+#secondNav .navFlyOut {
+    
+}
+#secondNav a {
+    color: #FFF;
+    padding: 10px 0;
+}
+.main {
+    padding-bottom: 60px;
+    min-height: 100%;
+}
+.fullList .main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+}
+/*SITE OVERLAYS*/
+.overlay {
+	background: #000;
+	opacity: .8;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	transition: opacity .5s;
+}
+/*RATING STYLES*/
+.rating {
+	margin: 0 0 4px;
+  	padding: 0 0 0 0;
+  	display: flex;
+ 	flex-direction: row;
+  	flex-wrap: nowrap;
+  	align-content: center;
+  	justify-content: flex-start;
+	height: 15px;
+	width: 80px;
+	position: relative;
+	overflow: hidden;
+	background: #F9B30C;
+	opacity: 0;
+	transition: opacity .5s;
+    position: relative;
+}
+.ratingClear {
+	background: transparent;
+}
+.ratingBlack {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.ratingColor {
+	z-index: 1;
+	background: #FFF;
+	height: 15px;
+	width: 80px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	transition: all 1s;
+	display: block;
+	opacity: .75;
+}
+.ratingMapColor {
+	left: 80px;
+	transition: left 1s;
+}
+.ratingColorClear {
+	background: #000;
+}
+.rating img {
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+}
+/*FOOTER STYLES*/
+footer {
+	height: 60px;
+	background: #232323;
+ 	margin: auto 0 0 0;
+  	padding: 0 30px 0 20px;
+  	display: flex;
+ 	flex-direction: column;
+  	flex-wrap: nowrap;
+  	align-content: center;
+  	justify-content: center;
+    position: relative;
+    width: 100%;
+}
+footer p {
+	color: #FFF;
+	font-size: 11px;
+	text-align: right;
+}
+/* ----------------------------  MEDIA QUERY ------------------------------ */
+@media screen and (max-width:1050px) {
+	header {
+		justify-content: center;
+	}
+    .main {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+	.headerLogo2 {
+		display: block;
+	}
+    
+	#menuIcon {
+		width: 45px;
+		height: 45px;
+		position: absolute;
+		left: 10px;
+		margin-right: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		cursor: pointer;
+	}
+	#menuIcon .menuLine {
+		width: 25px;
+		height: 2px;
+		background: #64706c;
+		margin: 3px auto;
+        cursor: pointer;
+	}
+    #headerLink h1 {
+        font: 500 24px/24px Josefin Sans, arial, sans-serif;
+    }
+    .Logo {
+        margin-right: 3px;
+        margin-top: -5px;
+    }
+    #body .showMenu {
+        left: 0;
+    }
+	#headerLinks {
+		position: fixed;
+		top: 78px;
+		left: -250px;
+		width: 250px;
+		height: 100%;
+		transition: left .8s;
+		padding: 44px 20px 20px;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+        background-color: #FFF;
+        border-top: 1px solid #233237;
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+	}
+	#headerLinks a {
+		align-self: center;
+		width: 100%;
+		text-align: left;
+		padding: 7px 0;
+		transition: font-size .5s;
+		text-transform: uppercase;
+		font-size: 14px;
+		height: auto;
+        -webkit-transform: translate3d(0,0,0);
+		-webkit-backface-visibility: hidden;
+	}
+    #siteHeader img {
+		margin-top: 2px;
+		align-self: center;
+		width: 26px;
+	}
+	#menuIcon {
+		width: 40px;
+		height: 40px;
+		align-self: center;
+		position: absolute;
+		left: 2px;
+		margin: 0 0 0 0;
+		padding: 0 0 0 0;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		cursor: pointer;
+	}
+}
+/* ----------------------------  MEDIA QUERY ------------------------------ */
+@media screen and (max-width:600px) {
+	h1 {
+		font: 300 27px/20px Josefin Sans, arial, sans-serif;
+		letter-spacing: 3px;
+	}
+	h1 span {
+		font: 100 28px/24px Josefin Sans, arial, sans-serif;
+		letter-spacing: 4px;
+	}
+	.headerMain {
+		margin-left: -2px;
+		margin-right: -6px;
+		margin-top: 2px;
+	}
+}
+/* ----------------------------  MEDIA QUERY ------------------------------ */
+@media screen and (max-width:430px) {
+	header {
+		height: 68px;
+	}
+	h1 {
+		margin: 10px 0 3px 0;
+		font: 300 24px/20px Josefin Sans, arial, sans-serif;
+	}
+	h1 span {
+		font: 100 25px/22px Josefin Sans, arial, sans-serif;
+	}
+}

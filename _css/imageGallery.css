@@ -1,0 +1,95 @@
+#imageGallery {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    overflow-y: scroll;
+    column-count: 3;
+    column-gap: 8px;
+    margin: 20px 0 70px;
+    padding: 0 -20px 0 0;
+}
+#imageGallery::-webkit-scrollbar {
+    display: none !important;
+}
+.indivImageGal {
+    width: 50%;
+    padding: 15px;
+}
+#imageGallery .imageGalleryCell {
+    padding: 6px 0 0;
+    display: block;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+#imageGallery .imageGalleryCell img {
+    width: 100%;
+}
+#imageGallery .imageGalleryCell p, #imageGallery .imageGalleryCell a {
+    position: absolute;
+    bottom: 5px;
+    right: 7px;
+    color: #FFF;
+    font-size: 9px;
+}
+.galleryLarge {
+    z-index: 6;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    max-width: 86vw;
+    max-height: 86vh;
+    display: none;
+}
+.galleryLarge p {
+    position: absolute;
+    bottom: 5px;
+    right: 7px;
+    color: #FFF;
+    font-size: 11px;
+}
+#overlay {
+    display: none;
+    opacity: .7;
+}
+.galleryImg {
+    max-width: 86vw;
+    max-height: 86vh;
+    margin: 0 auto;
+    display: block;
+}
+/* ----------------------------  MEDIA QUERY ------------------------------ */
+@media screen and (max-width:1470px) {
+    #imageGallery {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        overflow-y: scroll;
+        column-count: 2;
+        column-gap: 8px;
+        margin: 20px 0 70px;
+        padding: 0 -20px 0 0;
+    }
+}
+/* ----------------------------  MEDIA QUERY ------------------------------ */
+@media screen and (max-width:800px) {
+    .indivImageGal {
+        width: 100%;
+        padding: 0px;
+    }
+    #imageGallery {
+        width: 100%;
+        column-count: 3;
+        column-gap: 8px;
+        margin: 0 0 30px;
+        padding: 0;
+    }
+    
+}
+/* ----------------------------  MEDIA QUERY ------------------------------ */
+@media screen and (max-width:600px) {
+    #imageGallery {
+        column-count: 2;
+    }
+}

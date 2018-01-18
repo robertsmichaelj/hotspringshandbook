@@ -1,0 +1,24 @@
+/* ----------------------------  MEDIA QUERY ------------------------------ */
+@media screen and (max-width:1100px) {
+    .fullList .main {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    #grids .gridHeaders h2 {
+        margin-top: 18px;
+    }
+    .fullList .customMapDiv {
+        min-width: 100%;
+        height: 30%;
+        min-height: 400px;
+        position: relative;
+        order: 1;
+        margin-top: 0px;
+        top: 0;
+    }
+    .fullList #allMapDiv {
+        width: 100%;
+        height: 100%;
+        min-height: 400px;
+    }
+}

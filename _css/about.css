@@ -1,0 +1,61 @@
+.about .main {
+    padding: 40px;
+}
+.main .aboutContent {
+    padding: 0px;
+}
+.main .aboutContent h2 {
+    
+}
+.main .aboutContent p {
+    max-width: 800px;
+    margin: 14px 0;
+    font-size: 15px;
+}
+#contactForm {
+    margin: 40px 0;
+}
+#contactForm h3 {
+    margin: 10px 0;
+}
+#contactForm .contactFormCells {
+    margin: 8px 0;
+}
+#contactForm .contactFormCells p {
+    
+}
+#contactForm .contactFormCells input {
+    min-width: 200px;
+}
+#contactForm .contactFormCells .resContactCellLargeInput{
+    
+}
+#contactForm .contactFormCells textarea {
+    width: 100%;
+    max-width: 600px;
+    min-height: 100px;
+}
+#contactFormButton {
+    font: 300 14px/18px Raleway, arial, sans-serif;
+    background-color: #FFF;
+    border: 1px solid #64706D;
+    padding: 5px 16px;
+    margin: 4px 0;
+}
+.contactStatus {
+    display: none;
+}
+.contactError {
+    display: none;
+    margin: 10px 0;
+    font-size: 15px;
+}
+/* ----------------------------  MEDIA QUERY ------------------------------ */
+@media screen and (max-width:900px) {
+    .about .main {
+        padding: 0 30px 0;
+    }
+    .about .main input, .about .main textarea {
+        border: 1px solid #64706c;
+    }
+}

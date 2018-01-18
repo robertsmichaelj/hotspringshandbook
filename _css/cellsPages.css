@@ -1,0 +1,298 @@
+#grids {
+	padding: 0px 40px 30px;
+	margin: 40px auto 20px;
+}
+.fullList #grids {
+	width: 58%;
+    margin: 0px 0;
+    padding: 0px 20px 30px 20px;
+}
+.gridHeaders {
+	width: 100%;
+	max-width: 1600px;
+ 	margin: 0 auto;
+  	padding: 0 7px;
+  	display: flex;
+ 	flex-direction: row;
+  	flex-wrap: wrap;
+  	align-content: center;
+  	justify-content: space-between;
+}
+.gridHeaders .gridHeaderLinks {
+ 	margin: auto 0 0 auto;
+  	padding: 5px 5px 0 0;
+  	display: flex;
+ 	flex-direction: row;
+  	flex-wrap: nowrap;
+  	align-content: center;
+  	justify-content: flex-end;
+}
+.gridHeaders .gridHeaderLinks a {
+	font: 600 14px/14px Raleway, arial, sans-serif;
+	text-decoration: underline;
+	color: #38B6A4;
+	margin: 0 4px;
+}
+.gridHeaders .gridHeaderLinks p {
+	font: 500 14px/15px Raleway, arial, sans-serif;
+}
+#grids .grid {
+	width: 100%;
+	max-width: 1600px;
+	height: auto;
+ 	margin: 6px auto 0;
+  	padding: 0 0 0 0;
+  	display: flex;
+ 	flex-direction: row;
+  	flex-wrap: wrap;
+  	align-content: center;
+  	justify-content: flex-start;
+	overflow: hidden;
+	-webkit-overflow-scrolling: touch;
+}
+.fullList #grids .grid {
+
+}
+.fill {
+    flex: 1;
+}
+#grids .grid::-webkit-scrollbar {
+	display: none;
+}
+.gridCell {
+	width: 20%;
+    min-width: 250px;
+	height: auto;
+ 	margin: 20px 0px 10px 0px;
+  	padding: 0 0 0 0;
+  	display: flex;
+ 	flex-direction: column;
+  	flex-wrap: nowrap;
+  	align-content: center;
+	cursor: pointer;
+}
+.fullList .gridCell {
+	width: 25%;
+    min-width: 0;
+	height: auto;
+ 	margin: 20px 0px 10px 0px;
+  	padding: 0 0 0 0;
+  	display: flex;
+ 	flex-direction: column;
+  	flex-wrap: nowrap;
+  	align-content: center;
+	cursor: pointer;
+}
+.gridCell:hover .overlay {
+    opacity: .6;
+}
+.gridCell:hover p {
+    opacity: 1;
+}
+.gridCellInnerWrap {
+	padding: 0 8px;
+	height: auto;
+}
+.mainIndex #grids .gridCell:nth-of-type(n + 11) {
+		display: none;
+}
+.gridImage {
+	padding: 0 10px;
+	height: 220px;
+	width: 100%;
+	background-size: cover;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	display: flex;
+ 	flex-direction: column;
+  	flex-wrap: wrap;
+  	align-content: flex-end;
+  	justify-content: flex-end;
+}
+.gridText {
+	position: relative;
+ 	margin: 0 0 0 0;
+  	padding: 7px 0px 2px;
+  	display: flex;
+ 	flex-direction: column;
+  	flex-wrap: nowrap;
+  	align-content: center;
+  	justify-content: center;
+}
+.grid h3 {
+	color: #232323;
+	text-align: left;
+	margin: 0 0 3px;
+	font-weight: 600;
+}
+.grid h4 {
+	color: #232323;
+	text-align: left;
+	margin-bottom: 5px;
+}
+.grid h6 {
+	color: #FFF;
+	text-align: center;
+	font-weight: 300;
+	font-size: 14px;
+    line-height: 14px;
+    margin: 0;
+}
+.commercialSurround {
+    position: absolute;
+	bottom: 7px;
+	left: 7px;
+    height: 22px;
+    width: 22px;
+    background: #000;
+    border-radius: 1000px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.grid p {
+	color: #FFF;
+	text-align: right;
+	font-weight: 500;
+	overflow: hidden;
+	padding: 10px;
+	opacity: 0;
+	transition: display .5s;
+	align-self: flex-end;
+}
+.grid .overlay {
+	opacity: 0;
+	transition: opacity .5s;
+ 	margin: 0 0 0 0;
+  	padding: 0 0 0 0;
+}
+/* ----------------------------  MEDIA QUERY ------------------------------ */
+@media screen and (max-width:1500px) {
+    .fullList .gridImage {
+		height: calc(100vw * 150.0 / 1440.0);
+	}
+}
+/* ----------------------------  MEDIA QUERY ------------------------------ */
+@media screen and (max-width:1380px) {
+	.gridImage {
+		height: calc(100vw * 200.0 / 1440.0);
+	}
+    .fullList .gridImage {
+		height: calc(100vw * 230.0 / 1440.0);
+	}
+    .gridCell {
+         min-width: 0;   
+    }
+    .fullList .gridCell {
+		width: 33.33%;
+        min-width: inherit;
+	}
+}
+/* ----------------------------  MEDIA QUERY ------------------------------ */
+@media screen and (max-width:1200px) {
+	#grids {
+		padding: 0px 20px 20px;
+        margin-bottom: 10px;
+	}
+	.gridCell {
+		width: 25%;
+	}
+	.gridImage {
+		height: calc(100vw * 260.0 / 1440.0);
+	}
+	.mainIndex #grids .gridCell:nth-of-type(n + 9) {
+		display: none;
+	}
+}
+/* ----------------------------  MEDIA QUERY ------------------------------ */
+@media screen and (max-width:1100px) {
+    .fullList #grids {
+        width: 100%;
+        order: 2;
+        padding: 10px 20px;
+    }
+    .fullList .gridCell {
+		width: 25%;
+        min-width: inherit;
+	}
+    .fullList .gridCell {
+		width: 33.33333%;
+	}
+    .fullList .gridImage {
+		height: calc(100vw * 320.0 / 1440.0);
+	}
+}
+/* ----------------------------  MEDIA QUERY ------------------------------ */
+@media screen and (max-width:800px) {
+    .gridCell:hover .overlay {
+		opacity: 0;
+	}
+	.gridCell:hover p {
+		opacity: 0;
+	}
+}
+/* ----------------------------  MEDIA QUERY ------------------------------ */
+@media screen and (max-width:700px) {
+	#grids {
+		padding: 0px 5px 10px;
+	}
+	.gridCell {
+		width: 33.33333%;
+	}
+	.mainIndex #grids .gridCell:nth-of-type(n + 7) {
+		display: none;
+	}
+	.gridImage {
+		height: calc(100vw * 320.0 / 1440.0);
+	}
+}
+/* ----------------------------  MEDIA QUERY ------------------------------ */
+@media screen and (max-width:550px) {
+    .fullList #grids {
+        padding: 10px;
+    }
+	.gridCell {
+		width: 50%;
+        min-width: 0;
+	}
+	.gridImage {
+		height: calc(100vw * 500.0 / 1440.0);
+	}
+}
+/* ----------------------------  MEDIA QUERY ------------------------------ */
+@media screen and (max-width:500px) {
+	#grids .gridHeaders h2 {
+		order: 2;
+		margin-top: 0;
+		font: 600 17px/19px Raleway, arial, sans-serif;
+	}
+	.gridHeaders a {
+		font: 600 12px/13px Raleway, arial, sans-serif;
+	}
+	#grids h3 {
+		font: 600 15px/16px Raleway, arial, sans-serif;
+		margin-bottom: 2px;
+	}
+	#grids h4 {
+		font: 400 13px/16px Raleway, arial, sans-serif;
+	}
+	.gridHeaders .gridHeaderLinks {
+		order: 1;
+		width: 100%;
+		margin-top: 4px;
+	}
+	.gridHeaders .gridHeaderLinks a {
+		margin: 0 0 3px 0;
+	}
+	.gridCell {
+		margin: 10px 0;
+	}
+    .fullList .gridCell {
+		width: 50%;
+	}
+    .fullList .gridImage {
+		height: calc(100vw * 500.0 / 1440.0);
+	}
+}
