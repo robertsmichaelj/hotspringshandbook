@@ -1,0 +1,463 @@
+.individual .main {
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    padding: 0;
+    z-index: 1;
+}
+.image__gallery {
+    width: 100%;
+    max-height: 260px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.image__gallery::-webkit-scrollbar {
+    display: none !important;
+}
+.image__gallery .image__gallery__cell {
+    max-height: 260px;
+    height: 260px;
+    max-width: 360px;
+    margin: 0 3px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.image__gallery .image__gallery__cell img {
+    min-height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    align-self: center;
+    object-fit: contain;
+    
+}
+.image__gallery .image__gallery__cell p, .image__gallery .image__gallery__cell a {
+    position: absolute;
+    bottom: 5px;
+    right: 7px;
+    color: #FFF;
+    font-size: 9px;
+}
+.js__large__image__gallery {
+    z-index: 6;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    max-height: 1200px;
+    display: none;
+    opacity: 1;
+    overflow: hidden;
+}
+.js__large__image__gallery__img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+.js__large__image__gallery__para {
+    position: absolute;
+    bottom: 5px;
+    right: 7px;
+    color: #FFF;
+    font-size: 11px;
+}
+.image__overlay {
+    display: none;
+}
+.galleryImg {
+    width: 100%;
+}
+
+.indiv__content {
+	width: 100%;
+	height: auto;
+ 	margin: 0 0 0 0;
+  	padding: 0 0px 15px;
+  	display: flex;
+ 	flex-direction: row;
+  	flex-wrap: wrap;
+  	align-content: center;
+  	justify-content: center;
+}
+.indiv__header__container {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.indiv__header__img__container {
+    width: 100%;
+}
+.indiv__header__overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: .4;
+    z-index: 2;
+}
+.indiv__header__video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+}
+.indiv__header__img {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
+.indiv__header__text {
+    margin: auto 0 12px 25px;
+    text-align: left;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    min-width: 360px;
+    z-index: 3;
+    margin: auto 0 20px 20px;
+    padding: 16px 10px 16px 20px;
+    background: #FFF;
+    opacity: .9;
+}
+.indiv__header__text h2 {
+    text-align: left;
+    margin-bottom: 3px;
+}
+.indiv__header__text h4 {
+    margin-top: 7px;
+}
+.indiv__text__and__gauges {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    
+}
+.indiv__text {
+	width: 70%;
+ 	margin: 10px 0 0 0;
+  	padding: 0 10px 0 40px;
+  	display: flex;
+ 	flex-direction: row;
+  	flex-wrap: nowrap;
+  	align-content: flex-start;
+  	justify-content: flex-start;
+	overflow: hidden;
+	position: relative;
+}
+.indiv__text__inner {
+    width: 100%;
+    padding: 50px 0;
+}
+.indiv__text__inner .indiv__text__header {
+    margin-bottom: 12px;
+}
+.description {
+	margin-top: 15px;
+}
+.personalNotes {
+	margin-top: 10px;
+}
+.indiv__text p {
+	margin-bottom: 5px;
+    font-size: 18px;
+    line-height: 24px;
+}
+.individual__map__container {
+	width: 100%;
+    margin-bottom: 20px;
+    min-height: 500px;
+    max-height: 800px;
+    margin-top: 50px;
+}
+.nudes, .accessableSeasons, .indiv__text__header  {
+    padding-right: 40px;
+}
+.individual .gauges {
+    width: 30%;
+    max-width: 350px;
+    margin: 0;
+    padding: 0 40px 0 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+.individual .gauges h2 {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+.individual .gauge {
+    margin: 0 auto;
+    height: 122px;
+	width: 140px;
+    position: relative;
+    top: 0;
+    right: 0;
+    max-width: 100%;
+}
+
+.individual__map__container iframe {
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+.comment__section {
+    max-width: 1000px;
+    width: 100%;
+    margin: 20px auto 30px;
+    padding: 20px;
+}
+.disqus_thread {
+    width: 100%;
+}
+.comment__section__header {
+	font: 600 19px/21px Raleway, arial, sans-serif;
+	margin: 0px 0 10px;
+}
+.comment__section__para {
+	font: 400 17px/19px Raleway, arial, sans-serif;
+	margin: 10px 0 20px;
+}
+/* ----------------------------  MEDIA QUERY ------------------------------ */
+@media screen and (max-width:1100px) {
+    .individual .gauges {
+        margin-top: 30px;
+    }
+}
+/* ----------------------------  MEDIA QUERY ------------------------------ */
+@media screen and (max-width:900px) {
+    .individual .gauges {
+        justify-content: center;
+    }
+    .individual .gauge {
+        margin: 0;
+    }
+    .indiv__text {
+        margin-top: 0;
+        flex-direction: column;
+    }
+    .indiv__content {
+        padding-top: 0;
+    }    
+    .individual .nudes, .individual .accessableSeasons, .indiv__text__inner indiv__text__header {
+        padding-right: inherit;
+    }
+    .indiv__header__text {
+        opacity: .8;
+        margin: 10px;
+    }
+}
+/* ----------------------------  MEDIA QUERY ------------------------------ */
+@media screen and (max-width:850px) {
+    .indiv__header__container {
+        height: auto;
+        max-height: 400px;
+    }
+    .indiv__header__video {
+
+    }
+    .indiv__header__text {
+        min-width: 0;
+    }
+}
+/* ----------------------------  MEDIA QUERY ------------------------------ */
+@media screen and (max-width:800px) {
+    .individual .main {
+        flex-wrap: wrap;
+    }
+    .indiv__content {
+        width: 100%;
+        padding: 10px 0;
+    }
+    .individual .individual__map__container {
+        height: 400px;
+        margin-top: 40px;
+    }
+	.individualImgAndText {
+		flex-direction: column;
+		height: auto;
+	}    
+}
+/* ----------------------------  MEDIA QUERY ------------------------------ */
+@media screen and (max-width:600px) {
+    .indiv__content {
+        padding: 0px 0 20px;
+        flex-direction: column;
+    }
+    .indiv__text {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .individual .gauges {
+        width: 100%;
+        max-width: inherit;
+        margin: 6px 0 0;
+        padding: 0 70px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .indiv__text {
+        order: 1;
+    }
+    .individual__map__div {
+        order: 3;
+    }
+    .individual__image__gal {
+        width: 100%;
+        margin: 8px 0 20px;
+        order: 2;
+    }
+    .image__gallery {
+        max-height: 300px;
+    }
+    .indiv__text__inner {
+        padding: 30px 20px;
+    }
+    .indiv__text {
+        order: 2;
+    }
+    .individual h2 {
+        width: 100%;
+        text-align: center;
+        padding-right: 0;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .individual .gauges {
+        width: 100%;
+        max-width: inherit;
+        margin: 40px 0 10px;
+        padding: 0 70px;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .individual .gauge {
+        order: 2;
+    }
+    .indiv__header__container {
+        height: auto;
+        max-height: 100%;
+    }
+    .indiv__header__img__container {
+        overflow: hidden;
+        height: 300px;
+    }
+    .indiv__header__text {
+        margin: auto 0 12px 25px;
+        position: relative;
+        min-width: 0;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        margin: 0;
+        padding: 10px 5px;
+    }
+    .indiv__header__video {
+        max-height: 140%;
+        min-width: inherit;
+        min-width: 100%;
+    }
+    .indiv__header__overlay {
+        opacity: 0.3;
+    }
+}
+/* ----------------------------  MEDIA QUERY ------------------------------ */
+@media screen and (max-width:550px) {
+    .indiv__header__text {
+        margin: 0 10px;
+        bottom: 12px;
+    }
+    .individual .gauges {
+        padding: 0 30px;
+        margin-top: 20px;
+    }
+    
+}
+/* ----------------------------  MEDIA QUERY ------------------------------ */
+@media screen and (max-width:550px) {
+    .indiv__header__text {
+        margin: 20px 10px 0;
+        bottom: 12px;
+    }
+    .individual .gauges {
+        padding: 0 30px;
+        margin-top: 20px;
+    }
+}
+/* ----------------------------  MEDIA QUERY ------------------------------ */
+@media screen and (max-width:530px) {
+	.individual__map__div {
+		height: 100vh;
+	}
+}
+/* ----------------------------  MEDIA QUERY ------------------------------ */
+@media screen and (max-width:476px) {
+    .indiv__header__img__container {
+        height: 200px;
+    }
+	.indiv__header__video {
+        max-height: 140%;
+        min-width: inherit;
+        min-width: 100%;
+    }
+}
+/* ----------------------------  MEDIA QUERY ------------------------------ */
+@media screen and (max-width:440px) {
+    .indiv__header__container {
+        height: auto;
+    }
+    .indiv__header__img__container {
+        overflow: hidden;
+    }
+    .indiv__header__video {
+        max-height: 240px;
+        min-width: inherit;
+    }
+    .individual__map__div, .all__map__div {
+		height: calc(100vh - 128px);
+	}
+}
+/* ----------------------------  MEDIA QUERY ------------------------------ */
+@media screen and (max-width:370px) {
+    .indiv__text__inner {
+        padding: 30px 20px 0;
+    }
+    .gauges {
+        padding: 0;
+    }
+    .image__gallery__cell {
+        max-width: 280px;
+    }
+    .indiv__header__img__container {
+        max-height: 180px;
+    }
+}

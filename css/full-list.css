@@ -1,0 +1,276 @@
+.full__list .main {
+    align-content: flex-start;
+    justify-content: flex-start;
+    max-width: 1300px;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+}
+
+.full__list .grids {
+/*	width: 57%;*/
+    max-width: 57%;
+    margin: 40px 0;
+    padding: 0px 20px 30px 20px;
+}
+.full__list .grid__cell {
+	width: 100%;
+    min-width: 0;
+	height: auto;
+ 	margin: 10px 0px 10px 0px;
+  	padding: 0 0 0 0;
+  	display: flex;
+ 	flex-direction: row;
+  	flex-wrap: nowrap;
+  	align-content: center;
+	cursor: pointer;
+    border: 2px solid #E5ECFF;
+    transition: .3s border-color;
+}
+
+.full__list .grid__cell__inner__wrap {
+    flex-direction: row;
+}
+.full__list .grid__image { 
+    max-width: 250px;
+}
+.full__list .grid__text { 
+    width: 100%;
+    padding: 20px;
+    box-shadow: none;
+    justify-content: flex-start;
+}
+.full__list .grid__text p {
+    opacity: 1;
+    color: #232323;
+    text-align: left;
+    padding: 10px 0;
+    font-size: 16px;
+    line-height: 20px;
+    align-self: flex-start;
+}
+.grid__cell:hover {
+    border-color: #C5C5E8;
+}
+
+
+.full__list__map__container {
+	min-width: 40%;
+	height: 100%;
+    position: fixed;
+    top: 60px;
+    right: 0;
+    margin-right: 20px;
+}
+.all__map__div {
+	width: 100%;
+    height: 90%;
+    padding-bottom: 60px;
+}
+
+.all__map__div iframe {
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+.filter__button {
+    align-self: center;
+    cursor: pointer;
+    width: 100px;
+    background: #48A2E8;
+    color: #FFF;
+    text-align: center;
+    padding: 10px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: font-weight .3s;
+}
+.filter__button:hover {
+    font-weight: 600;
+}
+.filter__section {
+    width: 100%;
+    margin: 16px 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.filter__header {
+    margin: 0 0 12px;
+    font-size: 20px;
+    font-weight: 560;
+}
+/*
+.filter__drop__downs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    width: 50%;
+}
+.filter__section__header {
+    width: 100%;
+    margin: 8px 0 0;
+    font-size: 20px;
+    font-weight: 500;
+    background: #48A2E8;
+    padding: 16px 16px 16px 20px;
+    text-align: center;
+    color: #FFF;
+}
+.filter__drop__down__container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    padding: 5px 0 0;
+}
+.drop__down__option {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    padding: 10px 5px;
+    flex: 1 1 46%;
+    margin: 5px;
+    background: #48A2E8;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 18px;
+}
+*/
+.filters {
+    
+}
+.filters .filters__cell {
+    
+}
+.filters__cell__header {
+    
+}
+.js__filters__season {
+    
+}
+.filters__expanded {
+    
+}
+.filters__expand__cell {
+    
+}
+
+
+/* ----------------------------  MEDIA QUERY ------------------------------ */
+@media screen and (max-width:1500px) {
+    .full__list .grid__image {
+/*		height: calc(100vw * 150.0 / 1440.0);*/
+		height: 100%;
+	}
+    .full__list .grid__cell {
+        min-height: 188px;
+	}
+}
+/* ----------------------------  MEDIA QUERY ------------------------------ */
+@media screen and (max-width:1380px) {
+    .full__list .grid__image {
+		height: calc(100vw * 230.0 / 1440.0);
+	}
+    .full__list .grid__cell {
+        min-width: inherit;
+        min-height: 0;
+	}
+}
+/* ----------------------------  MEDIA QUERY ------------------------------ */
+@media screen and (max-width:1100px) {
+    .main {
+        padding-top: 0;
+    }
+    .full__list .grids {
+        width: 100%;
+        order: 2;
+        padding: 10px 10px;
+        max-width: 100%;
+    }
+    .full__list .grid {
+        justify-content: space-around;
+        width: 100%;
+        
+    }
+    .full__list .grid__cell {
+		width: 31%;
+        min-width: inherit;
+        flex-direction: column;
+        margin: 10px 0;
+        border-width: 1px;
+	}
+    .full__list .grid__text {
+        padding: 10px;
+        width: auto;
+    }
+    .full__list .grid__text p {
+        display: none;
+    }
+    .full__list .grid__image {
+		height: calc(100vw * 320.0 / 1440.0);
+        min-width: 100%;
+	}
+    .full__list .main {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .full__list .full__list__map__container {
+        min-width: 100%;
+        height: 30%;
+        min-height: 400px;
+        position: relative;
+        order: 1;
+        margin-top: 0px;
+        top: 0;
+    }
+    .all__map__div {
+        width: 100%;
+        height: 100%;
+        min-height: 400px;
+    }
+}
+/* ----------------------------  MEDIA QUERY ------------------------------ */
+@media screen and (max-width:600px) {
+    .full__list .grid__cell {
+		width: 47%;
+        min-width: inherit;
+        flex-direction: column;
+        margin: 10px 0;
+	}
+        .full__list .grid__text {
+        padding: 10px 10px 5px;
+        width: auto;
+    }
+}
+
+/* ----------------------------  MEDIA QUERY ------------------------------ */
+@media screen and (max-width:550px) {
+    .full__list .grids {
+        padding: 10px;
+    }
+}
+/* ----------------------------  MEDIA QUERY ------------------------------ */
+@media screen and (max-width:530px) {
+	.all__map__div {
+		height: 100vh;
+	}
+}
+/* ----------------------------  MEDIA QUERY ------------------------------ */
+@media screen and (max-width:500px) {
+    .full__list .grid__image {
+		height: calc(100vw * 500.0 / 1440.0);
+	}
+    
+}

@@ -1,15 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
-    <!-- Google Tag Manager -->
-<!--
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-W6ZQMXD');</script>
--->
-    <!-- End Google Tag Manager -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108693613-1"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
@@ -17,13 +8,6 @@
 		gtag('js', new Date());
 		gtag('config', 'UA-108693613-1');
 	</script>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
-      (adsbygoogle = window.adsbygoogle || []).push({
-        google_ad_client: "ca-pub-1027038762841000",
-        enable_page_level_ads: true
-      });
-    </script>
  	<meta charset="utf-8">
   	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   	<meta name="Description" content="Love hot springs? Find your adventure, and easily discover the best hot springs that outdoors Idaho has to offer!"/>
@@ -31,155 +15,145 @@
    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Hot Springs Handbook</title>
 <!--CSS-->
-    <link href="_css/allPages.css?v=1.11" rel="stylesheet"/>
-   	<link href="_css/featured.css?v=1.11" rel="stylesheet"/>
-   	<link href="_css/cellsPages.css?v=1.11" rel="stylesheet"/>
+    <link href="css/allPages.css" rel="stylesheet"/>
+    <link href="css/index.css" rel="stylesheet"/>
 <!--FONTS-->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,400,300,600" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:300,100' rel='stylesheet' type='text/css'>
 <!--SCRIPTS-->
+    <script src="jet/jet-7-24-18.js"></script>
+    <script src=/js/springs-data.js></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-   	<script src="/plugins/vue.js"></script>
-   	<script src="plugins/defiant.min.js"></script>
-   	<script src="_js/data.js"></script>
-    
-    
+   	<script src="plugins/vue.min.js"></script>
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W6ZQMXD"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-<div id="body" class="mainIndex" v-cloak>
-	<header id="siteHeader">
-		<a id="menuIcon">
-			<div class="menuLine"></div>
-			<div class="menuLine"></div>
-			<div class="menuLine"></div>
+<div class="main__index hot__body" v-cloak>
+	<header class="site__header">
+		<a class="menu__icon">
+			<div class="menu__line"></div>
+			<div class="menu__line"></div>
+			<div class="menu__line"></div>
 		</a>
-		<div class="headerLogoDiv">    
-            <div class="headerText">
-               <div class="Logo">
-                   <div class="logoBackLine"></div>
-                   <div class="mountain1"></div>
-                   <div class="mountain2"></div>
-                   <div class="mountain3"></div>
+		<div class="header__logo__container">    
+            <div class="header__text">
+               <div class="site__logo">
+                   <div class="site__logo__back__line"></div>
+                   <div class="mountain__1"></div>
+                   <div class="mountain__2"></div>
+                   <div class="mountain__3"></div>
                </div>
-<!--                <img src="icons/mountain.png" alt="">-->
-                <a class="headerMain" id="headerLink" v-bind:href="url">
+                <a class="header__main header__link" v-bind:href="url">
                     <h1>{{ headerTop }}<span>{{ headerBottom }}</span></h1>
                 </a>
-                <img src="icons/mountain.png" alt="" class="headerLogo2">
             </div>
-            <div class="headerArrow"></div>
 		</div>
-		<div id="headerArrow"></div>
-		<div id="headerLinks" class="">
+		<div class="header__links" class="">
 			<template v-for="(index, val) in menuItems" v-bind:text-content="menu(index)">
 				<a v-bind:href='index.menuItemURL'>{{ index.menuItem }}</a>
 			</template>
 		</div>
 	</header>
 	<div class="main">
-		<div id="featured" v-bind:style="{'backgroundImage': 'url(' + backgroundImg + ')'}">
-			<div class="headlineDiv">
-				<h2 class="headline">Warm Up Your Winter</h2>
-				<a href="/fullmap.html">See Hot Springs Map ></a>
+		<div class="featured" v-bind:style="{'backgroundImage': 'url(' + backgroundImg + ')'}">
+			<div class="headline__div">
+                <h2 class="headline">{{ heroHead }}</h2>
+				<a href="/fulllist.html">See Hot Springs Map ></a>
 			</div>
-			<a class="featuredText" v-bind:href="url">
+			<a class="featured__text" v-bind:href="url">
 				<h2>{{ header }}</h2>
 				<h3>{{ name }}</h3>
 				<div class="rating">
-				    <div class="ratingColor"></div>
+				    <div class="rating__color"></div>
 					<img src="/icons/hollowStars.png">
 				</div>
 				<h4>Near: <span>{{ nearbyTown }}</span></h4>
 				<p>{{ shortDescription }}</p>
-				<h5 class="featuredLearnMore">Learn More</h5>
+				<h5 class="featured__learn__more">Learn More</h5>
 			</a>
 		</div>
-<!--
-		<div id="secondNav">
-            <div class="secondNavInner">
-                <h4>Sort By:</h4>
-                <div id="navCategory" class="secondNavDropDown">
-                    <h5>Region</h5>
-                    <div class="navDropdown">
-                        <div class="navFlyOut">
-                            <a href="?idaho">Idaho</a>
-                            <a href="?oregon">Oregon</a>
-                        </div>
+		<div class="grids index__grids">
+		    <div class="index__section">
+                <div class="grid__headers most__popular__header">
+                    <h2>{{ headerTop }}</h2>
+                    <div class="grid__header__links">
+                        <a href="/fulllist.html">See All</a>
                     </div>
                 </div>
-		    </div>
-		</div>
--->
-		<div id="grids" class="indexgrids">
-			<div class="gridHeaders" id="mostPopularHeader">
-				<h2>{{ headerTop }}</h2>
-				<div class="gridHeaderLinks">
-					<a href="/fulllist.html">See All</a>
-				</div>
+                <div class="grid most__popular">
+                    <template v-for="(index, val) in numOfPop"  v-bind:text-content="pop(index)">
+                        <a v-bind:href='"/individual/" + index.condensedName' class='grid__cell most__popular__cell' v-bind:class=index.condensedName v-bind:data-rating=index.rating>
+                            <div class='grid__cell__inner__wrap'>
+                                <div class='grid__image' v-bind:style="{'backgroundImage': 'url(activities/' + index.type + '/' + index.condensedName + '/header/' + 'thumb.jpg)'}">
+                                    <div class='overlay'></div>
+                                    <p>{{ index.description }}</p>
+                                    <div class="commercial__surround" v-if="index.commercial === true">
+                                        <h6>$</h6>
+                                    </div>
+                                </div>
+                                <div class=grid__text>
+                                    <h3>{{ index.name }}</h3>
+                                    <div class=rating>
+                                        <div class="rating__color"></div>
+                                        <img src="/icons/hollowStars.png">
+                                    </div>
+                                    <h4>Near: <span>{{ index.nearestTown }}</span></h4>
+                                </div>
+                            </div>
+                        </a>
+                    </template>
+                </div>
 			</div>
-			<div class="grid mostPopular" id="mostPopular">
-				<template v-for="(index, val) in numOfPop"  v-bind:text-content="pop(index)">
-					<a v-bind:href='"/individual.html?" + index.condensedName' v-bind:id= index.condensedName class='gridCell mostPopularCell' v-bind:class=index.condensedName v-bind:data-rating=index.rating>
-						<div class='gridCellInnerWrap'>
-							<div class='gridImage' v-bind:style="{'backgroundImage': 'url(activities/' + index.type + '/' + index.condensedName + '/header/' + 'thumb.jpg)'}">
-								<div class='overlay'></div>
-								<p>{{ index.description }}</p>
-								<div class="commercialSurround" v-if="index.commercial === true">
-								    <h6>$</h6>
-								</div>
-							</div>
-							<div class=gridText>
-								<h3>{{ index.name }}</h3>
-								<div class=rating>
-									<div class="ratingColor"></div>
-									<img src="/icons/hollowStars.png">
-								</div>
-								<h4>Near: <span>{{ index.nearestTown }}</span></h4>
-							</div>
-						</div>
-					</a>
-				</template>
-			</div>
-			<div class="gridHeaders" id="highestRatedHeader">
-				<h2>{{ headerTop }}</h2>
-				<div class="gridHeaderLinks">
-					<a href="/fulllist.html">See All</a>
-				</div>
-			</div>
-			<div class="grid highestRated" id="highestRated">
-				<template v-for="(index, val) in numOfRate" v-bind:text-content="rate(index)">
-					<a v-bind:href='"/individual.html?" + index.condensedName'  v-bind:id= index.condensedName class='gridCell highestRatedCell' v-bind:class=index.condensedName v-bind:data-rating=index.rating>
-						<div class='gridCellInnerWrap'>
-							<div class='gridImage' v-bind:style="{'backgroundImage': 'url(activities/' + index.type + '/' + index.condensedName + '/header/' + 'thumb.jpg)'}">
-								<div class='overlay'></div>
-								<p>{{ index.description }}</p>
-								<div class="commercialSurround" v-if="index.commercial === true">
-								    <h6>$</h6>
-								</div>
-							</div>
-							<div class=gridText>
-								<h3>{{ index.name }}</h3>
-								<div class=rating>
-									<div class="ratingColor"></div>
-									<img src="/icons/hollowStars.png">
-								</div>
-								<h4>Near: <span>{{ index.nearestTown }}</span></h4>
-							</div>
-						</div>
-					</a>
-				</template>
-			</div>
+			<div class="index__section index__all__categories">
+			    <div class="grid_headers index__all__categories__header">
+                    <h2>{{ headerTop }}</h2>
+                </div>
+                <div class="grid all__categories__grid">
+                    <template v-for="(index, val) in catData" v-bind:text-content="pop(index)">
+                        <a v-bind:href=index.link class='grid__cell__large'>
+                            <div class='grid__cell__img__large' v-bind:style="{'backgroundImage': 'url(' + index.img + ')'}">
+                                <div class='grid__large__overlay'></div>
+                                <h4 class="grid__large__cell__header">{{ index.Title }}</h4>
+                            </div>
+                        </a>
+                    </template>
+                </div>
+            </div>
+			<div class="index__section">
+                <div class="grid__headers highest__rated__header">
+                    <h2>{{ headerTop }}</h2>
+                    <div class="grid__header__links">
+                        <a href="/fulllist.html">See All</a>
+                    </div>
+                </div>
+                <div class="grid highest__rated">
+                    <template v-for="(index, val) in numOfRate" v-bind:text-content="rate(index)">
+                        <a v-bind:href='"/individual/" + index.condensedName'  class='grid__cell highestRatedCell' v-bind:class=index.condensedName v-bind:data-rating=index.rating>
+                            <div class='grid__cell__inner__wrap'>
+                                <div class='grid__image' v-bind:style="{'backgroundImage': 'url(activities/' + index.type + '/' + index.condensedName + '/header/' + 'thumb.jpg)'}">
+                                    <div class='overlay'></div>
+                                    <p>{{ index.description }}</p>
+                                    <div class="commercial__surround" v-if="index.commercial === true">
+                                        <h6>$</h6>
+                                    </div>
+                                </div>
+                                <div class=grid__text>
+                                    <h3>{{ index.name }}</h3>
+                                    <div class=rating>
+                                        <div class="rating__color"></div>
+                                        <img src="/icons/hollowStars.png">
+                                    </div>
+                                    <h4>Near: <span>{{ index.nearestTown }}</span></h4>
+                                </div>
+                            </div>
+                        </a>
+                    </template>
+                </div>
+            </div>
 		</div>
 	</div>
-	<footer id="footer"><p id="footerText"></p></footer>
+    <footer class="site__footer"><p class="site__footer__para"></p><span></span></footer>
 </div>
 
-
-<script src="_js/allPages.js?v=1.11"></script>
-<script src="_js/cellsPages.js?v=1.11"></script>
+<script src="js/data.js"></script>
 </body>
 </html>

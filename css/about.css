@@ -1,0 +1,54 @@
+.about .main {
+    padding: 40px;
+}
+.aboutContent {
+    padding: 0px;
+}
+.aboutContent p {
+    max-width: 800px;
+    margin: 14px 0;
+    font-size: 15px;
+}
+.contact__form {
+    margin: 40px 0;
+}
+.contact__form h3 {
+    margin: 10px 0;
+}
+.contact__form__cells {
+    margin: 8px 0;
+}
+.contact__form__cells input {
+    min-width: 200px;
+}
+.contact__form__cells textarea {
+    width: 100%;
+    max-width: 600px;
+    min-height: 100px;
+}
+.contact__form__button {
+    font: 300 14px/18px Raleway, arial, sans-serif;
+    background-color: #FFF;
+    border: 1px solid #64706D;
+    padding: 5px 16px;
+    margin: 4px 0;
+}
+.contact__status {
+    display: none;
+}
+.contact__error {
+    display: none;
+    margin: 10px 0;
+    font-size: 15px;
+}
+/* ----------------------------  MEDIA QUERY ------------------------------ */
+@media screen and (max-width:900px) {
+    /*ABOUT PAGE*/
+    .about .main {
+        padding: 0 30px 0;
+    }
+    .about .main input, .about .main textarea {
+        border: 1px solid #64706c;
+    }
+    /*END ABOUT PAGE*/
+}

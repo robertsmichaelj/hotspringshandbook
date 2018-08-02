@@ -1,15 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
-    <!-- Google Tag Manager -->
-<!--
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-W6ZQMXD');</script>
--->
-    <!-- End Google Tag Manager -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108693613-1"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
@@ -17,13 +8,6 @@
 		gtag('js', new Date());
 		gtag('config', 'UA-108693613-1');
 	</script>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
-      (adsbygoogle = window.adsbygoogle || []).push({
-        google_ad_client: "ca-pub-1027038762841000",
-        enable_page_level_ads: true
-      });
-    </script>
  	<meta charset="utf-8">
   	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   	<meta name="Description" content="Love hot springs? Find your adventure, and easily discover the best hot springs that outdoors Idaho has to offer!"/>
@@ -31,46 +15,39 @@
    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Hot Springs Handbook - About</title>
 <!--CSS-->
-    <link href="_css/allPages.css" rel="stylesheet"/>
-    <link href="_css/about.css" rel="stylesheet"/>
+    <link href="css/allPages.css" rel="stylesheet"/>
+    <link href="css/about.css" rel="stylesheet"/>
 <!--FONTS-->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,400,300,600" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:300,100' rel='stylesheet' type='text/css'>
 <!--SCRIPTS-->
-   	<script src="/plugins/vue.js"></script>
-   	<script src="plugins/defiant.min.js"></script>
-   	<script src="_js/data.js"></script>
+    <script src="jet/jet-7-24-18.js"></script>
+   	<script src="/plugins/vue.js"></script>   	
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W6ZQMXD"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-<div id="body" class="about" v-cloak>
-	<header id="siteHeader">
-		<a id="menuIcon">
-			<div class="menuLine"></div>
-			<div class="menuLine"></div>
-			<div class="menuLine"></div>
+<div class="about hot__body" v-cloak>
+	<header class="site__header">
+		<a class="menu__icon">
+			<div class="menu__line"></div>
+			<div class="menu__line"></div>
+			<div class="menu__line"></div>
 		</a>
-		<div class="headerLogoDiv">
-            <div class="headerText">
-                <div class="Logo">
-                    <div class="logoBackLine"></div>
-                    <div class="mountain1"></div>
-                    <div class="mountain2"></div>
-                    <div class="mountain3"></div>
+		<div class="header__logo__container">
+            <div class="header__text">
+                <div class="header__logo__container">
+                    <div class="site__logo__back__line"></div>
+                    <div class="mountain__1"></div>
+                    <div class="mountain__2"></div>
+                    <div class="mountain__3"></div>
                 </div>
-                <a class="headerMain" id="headerLink" v-bind:href="url">
+                <a class="header__main header__link" v-bind:href="url">
                     <h1>{{ headerTop }}<span>{{ headerBottom }}</span></h1>
                 </a>
-                <img src="icons/mountain.png" alt="" class="headerLogo2">
+
             </div>
-            <div class="headerArrow"></div>
 		</div>
-		<div id="headerArrow"></div>
-		<div id="headerLinks">
+		<div class="header__links">
 			<template v-for="(index, val) in menuItems" v-bind:text-content="menu(index)">
 				<a v-bind:href='index.menuItemURL'>{{ index.menuItem }}</a>
 			</template>
@@ -107,10 +84,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		    <h2>Message Sent Successfully</h2>
 		</div>
 	</div>
-	<footer id="footer"><p id="footerText"></p></footer>
+	<footer class="site__footer"><p class="site__footer__para"></p></footer>
 </div>
 
-<script src="_js/about.js"></script>
-<script src="_js/allPages.js"></script>
+<script src="js/data.js"></script>
 </body>
 </html>

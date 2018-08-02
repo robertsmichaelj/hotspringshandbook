@@ -8,71 +8,78 @@
 		gtag('js', new Date());
 		gtag('config', 'UA-108693613-1');
 	</script>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
-      (adsbygoogle = window.adsbygoogle || []).push({
-        google_ad_client: "ca-pub-1027038762841000",
-        enable_page_level_ads: true
-      });
-    </script>
  	<meta charset="utf-8">
   	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  	<meta name="Description" content="Love hot springs? Find your adventure, and easily discover the best hot springs that outdoors Idaho has to offer!"/>
+  	<meta name="Description" content="Love hot springs? Check out this growing list of the best hot springs in Idaho."/>
    	<meta http-equiv="x-ua-compatible" content="ie=edge">
    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Hot Springs Handbook</title>
 <!--CSS-->
-	<link href="_css/allPages.css" rel="stylesheet"/>
-	<link href="_css/mapsPages.css" rel="stylesheet"/>
-	<link href="_css/featured.css" rel="stylesheet"/>
-	<link href="_css/individual.css" rel="stylesheet"/>
-	<link href="_css/imageGallery.css" rel="stylesheet"/>
+	<link href="../css/allPages.css" rel="stylesheet"/>
+	<link href="../css/individual.css" rel="stylesheet"/>
+	<link href="../css/maps.css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="/plugins/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="/plugins/slick/slick-theme.css"/>
 <!--FONTS-->
    	<link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,300,100' rel='stylesheet' type='text/css'>
 <!--SCRIPTS-->
+   <script src="/jet/jet-7-24-18.js"></script>
+    <script src=/js/springs-data.js></script>
    	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUdwXWP_my-i0XYerY7BcDic0L-Jhe8Ok"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="/plugins/vue.js"></script>
-   	<script src="/plugins/defiant.min.js"></script>
-   	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
-    <script src="_js/data.js"></script>
+    <script type="text/javascript" src="/plugins/slick/slick.min.js"></script>
+	<script src="/plugins/vue.min.js"></script>
+	
+    
+    
 </head>
 <body>
-<div id="body" class="individual" v-cloak>
-	<header id="siteHeader">
-		<a id="menuIcon">
-			<div class="menuLine"></div>
-			<div class="menuLine"></div>
-			<div class="menuLine"></div>
+
+<div class="individual hot__body" v-cloak>
+		<header class="site__header">
+		<a class="menu__icon">
+			<div class="menu__line"></div>
+			<div class="menu__line"></div>
+			<div class="menu__line"></div>
 		</a>
-		<div class="headerText">
-			<div class="Logo">
-                   <div class="logoBackLine"></div>
-                   <div class="mountain1"></div>
-                   <div class="mountain2"></div>
-                   <div class="mountain3"></div>
+		<div class="header__logo__container">    
+            <div class="header__text">
+               <div class="site__logo">
+                   <div class="site__logo__back__line"></div>
+                   <div class="mountain__1"></div>
+                   <div class="mountain__2"></div>
+                   <div class="mountain__3"></div>
                </div>
-			<a class="headerMain" id="headerLink" v-bind:href="url">
-				<h1>{{ headerTop }}<span>{{ headerBottom }}</span></h1>
-			</a>
-			<img src="icons/mountain.png" alt="" class="headerLogo2">
+                <a class="header__main header__link" v-bind:href="url">
+                    <h1>{{ headerTop }}<span>{{ headerBottom }}</span></h1>
+                </a>
+            </div>
 		</div>
-		<div id="headerArrow"></div>
-		<div id="headerLinks">
+		<div class="header__links" class="">
 			<template v-for="(index, val) in menuItems" v-bind:text-content="menu(index)">
 				<a v-bind:href='index.menuItemURL'>{{ index.menuItem }}</a>
 			</template>
 		</div>
 	</header>
 	<div class="main">
-		<div id="indivText">
+		<div class="indiv__content">
             <template>
-                <div class="indivInfoText">
-                    <div class="indivInfoInnerText">
+                <div class="indiv__header__container">
+                    <div class="indiv__header__img__container">
+<!--                        <img class="indiv__header__img" v-bind:src="imgHeader" alt="">-->
+                    <div class="indiv__header__overlay"></div>
+                    <video v-if="vidHeader !== ''" playsinline autoplay muted loop class="indiv__header__video">
+                        <source v-bind:src="vidHeader" type="video/mp4">
+                    </video>
+                    <img v-if="vidHeader === ''" class="indiv__header__img" v-bind:src='imgHeader' alt="">
+                    </div>
+                    <div class="indiv__header__text featured__text">
                         <h2>{{ name }}</h2>
-                        <div class="rating"></div>
+                        <div class="rating">
+                        <div class="rating__color"></div>
+                            <img src="/icons/hollowStars.png">
+                        </div>
                         <h4 class="nearestTown">Nearest Town:&nbsp;<span>{{ nearestTown }}</span></h4>
                         <h4 class="walkingDist">Walking Distance:&nbsp;<span>{{ walkingDist }}</span></h4>
                         <h4 class="parkingCost">Parking Cost:&nbsp;<span>{{ parkingCost }}</span></h4>
@@ -81,31 +88,48 @@
                         <h4 class="accessableSeasons">Accessable Seasons:&nbsp;<span>{{ accessSeasons }}</span></h4>
                         <h4 class="nudes">Get Naked?:&nbsp;<span>{{ nudes }}</span></h4>
                         <h4 v-if="website.length > 0">Website:&nbsp;<a class="website" v-bind:href='website'>Link</a></h4>
-                        <div class="gauges">
-                            <div id="gaugeVistorScale" class="gauge"></div>
-                            <div id="easeOfAccessScale" class="gauge"></div>
+                    </div>
+                </div>
+                <div class="indiv__text__and__gauges">
+                    <div class="indiv__text">
+                        <div class="indiv__text__inner">
+                            <h2 class="indiv__text__header">Description</h2>
+                            <div v-html="description" class="description"></div>
+                            <div v-html="personalNotes" class="personalNotes"></div>
                         </div>
-                        <div v-html="description" class="description"></div>
-                        <div v-html="personalNotes" class="personalNotes"></div>
+                    </div>
+                    <div class="gauges">
+                    <h2>Gauges</h2>
+                        <div class="gauge" id="gauge__visitor__scale"></div>
+                        <div class="gauge" id="gauge__ease__access"></div>
+                        <div class="gauge" id="gauge__water__temp"></div>
+                        <div class="gauge" id="gauge__nude__scale"></div>
                     </div>
                 </div>
             </template>
-            <div id="individualMapDiv"></div>
+            
         </div>
-        <div class="indivImageGal">
-            <div id="imageGallery"></div>
+        <div class="individual__image__gallery">
+            <div class="image__gallery"></div>
         </div>
+        <div class="individual__map__container"></div>
 	</div>
-    <footer id="footer"><p id="footerText"></p></footer>
+    <div class="comment__section">
+        <h3 class="comment__section__header">Have you visited <span></span> lately?</h3>
+        <p class="comment__section__para">Let us know what you thought, and if you had a great time or encountered problems!</p>
+        <div id="disqus_thread"></div>
+    </div>
+    <footer class="site__footer"><p class="site__footer__para"><span></span></p></footer>
 </div>
-<div id="overlay"></div>
+<div class="image__large__gallery js__large__image__gallery">
+    <img src="" class="js__image__gallery__img" alt="">
+    <p class="js__image__gallery__para"></p>
+</div>
+<div class="image__overlay"></div>
 
-</body>
 <script src="/plugins/raphael.js"></script>
 <script src="/plugins/justgage.js"></script>
-<script src="_js/allPages.js"></script>
-<script src="_js/individual.js"></script>
-<script src="_js/imageGallery.js"></script>
-
+<script src="/js/data.js"></script>
+<script id="dsq-count-scr" src="//hot-springs-handbook.disqus.com/count.js" async></script>
+</body>
 </html>
-<!--&callback=initMap-->
